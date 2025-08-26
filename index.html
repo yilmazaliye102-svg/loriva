@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loriva Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Loriva</div>
+    <nav>
+      <ul>
+        <li><a href="#menu">Menü</a></li>
+        <li><a href="#about">Hakkımızda</a></li>
+        <li><a href="#contact">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Hoşgeldiniz</h1>
+      <p>Loriva Restaurant – Modern dokunuşlarla unutulmaz tatlar.</p>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu-section">
+    <h2>Menümüz</h2>
+    <div class="menu-grid">
+      <div class="menu-item" onclick="openModal('Izgara Somon', 'Lezzetli ızgara somon, limon sosu ile.', '₺250', 'https://images.unsplash.com/photo-1504674900247-0877df9cc836')">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Izgara Somon">
+        <h3>Izgara Somon</h3>
+        <p>Taze somon ızgara</p>
+      </div>
+
+      <div class="menu-item" onclick="openModal('Makarna', 'Kremalı fesleğenli makarna.', '₺180', 'https://images.unsplash.com/photo-1525755662778-989d0524087e')">
+        <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e" alt="Makarna">
+        <h3>Makarna</h3>
+        <p>Kremalı fesleğen</p>
+      </div>
+
+      <div class="menu-item" onclick="openModal('Kokteyl', 'Serinletici tropikal kokteyl.', '₺120', 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=1557&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=1557&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kokteyl">
+        <h3>Kokteyl</h3>
+        <p>Tropikal meyveler</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>Hakkımızda</h2>
+    <p>Loriva, misafirlerine şık ortamda en seçkin lezzetleri sunar. Modern mutfak anlayışıyla hazırlanmış yemeklerimiz ile unutulmaz bir deneyim yaşayın.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>İletişim</h2>
+    <p>📍 Adres: Konya, Türkiye</p>
+    <p>📞 Telefon: +90 555 000 00 00</p>
+    <p>📧 Email: info@loriva.com</p>
+  </section>
+
+  <!-- Modal -->
+  <div id="menuModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="modalImage" src="" alt="">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <p id="modalPrice" class="price"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
